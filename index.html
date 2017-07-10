@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thai Learning Tools</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This a landing page I practiced coding from a design">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+</head>
+<body class="darken">
+	<div class="Grid">
+		<nav role="navigation" class="navBar">
+			<nav class="wrapper">
+				<div class="logo"><img src="./images/logo.png"></div>
+				<input type="checkbox" id="menu-toggle">
+	               <label for="menu-toggle" class="label-toggle"></label>
+	            </input>			
+				<ul>
+					<li class="textLinks"><a href="#">OUR TEAM</a></li>
+					<li class="textLinks"><a href="#">CONTACT</a></li>
+					<li class="textLinks"><a href="#">BLOG</a></li>
+					<!-- <li class="login"><a href="#"><img src="./images/userIcon.png" id="icon">LOGIN</a></li>
+					<li class="plans"><a href="#">PLANS & PRICING</a></li> -->
+				</ul>
+			</nav>				
+		</nav>
+		<header role="header">
+			<div class="slogan" role="slogan">			
+				<h1>Practice Thai Sentences!</h1>
+		    </div>
+		</header>
+			
+		<main role="main" class="main-content">				
+			<div class="callToAction">
+				<div class="formHeader">
+					<h2>Thai Sentence Maker</h2>	
+				</div>
+				<form role="free trial form" class="trialForm">
+					<input id="timeTxt" type="text" name="time" placeholder="Time">
+					<input id="subjectTxt" type="text" name="subject" placeholder="Subject">
+					<input id="verbText" type="text" name="verb" placeholder="Verb">
+					<input id="adjectiveTxt" type="text" name="object" placeholder="Object, Adjective, Adverb">
+					<input id="questionTxt" type="text" name="question" placeholder="Question Word">
+					<button id="makeSentenceBtnPressed" class="submitBtn" type="button">Make Thai Sentence!</button>
+					<button id="reset" class="resetBtn">Reset</button>
+				</form>			
+			</div>	
+	    </main>
+	    <section class="display">
+	    	<div class="results">
+				<span id="resultsDisplay" class="sentence">Your sentence goes here!</span>
+			</div>
+	    </section>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	 -->
+    <script src="app.js"></script>
+</body>
+</html>
