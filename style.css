@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/thaiScene.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/428394/ThaiScene.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto, cover;
