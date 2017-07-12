@@ -6,6 +6,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px; }
 
+header {
+  margin-top: 125px;
+}
 /* ------ Flexbox Grid Styles ------------ */
 .Grid {
   display: flex;
@@ -175,3 +178,7 @@ nav .wrapper {
     color: #65919C;
     font-size: 4em;
     font-weight: 300; }
+
+    @media screen and (max-width: 425px) {
+       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/ThaiSceneMobile.jpg);
+    }

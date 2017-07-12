@@ -1,22 +1,37 @@
-var time = document.getElementById('timeTxt');
-var subject = document.getElementById('subjectTxt');
-var verb = document.getElementById('verbText');
-var adjective = document.getElementById('adjectiveTxt');
-var question = document.getElementById('questionTxt');
-var sentenceBtn = document.getElementById('makeSentenceBtnPressed');
-var results = document.getElementById('resultsDisplay');
-var resetBtn = document.getElementById('reset');
-var form = document.getElementById('myForm');
+const Time = ('#timeTxt');
+const Subject = ('#subjectTxt');
+const Verb = ('#verbText');
+const Adjective = ('#adjectiveTxt');
+const Question = ('#questionTxt');
+const SentenceBtn = ('#makeSentenceBtnPressed');
+const Results = ('#resultsDisplay');
+const ResetBtn = ('#reset');
+const Form = ('#myForm');
+const InputTxt = ('.txtInput');
 
-    sentenceBtn.addEventListener("click", function() {
+function getData() {
+	$('Form').submit(event => {
 	event.preventDefault();
-	var str = time.value + " " + subject.value + " " + verb.value + " " + adjective.value + " " + question.value;
-    results.innerHTML = str;
-});
-
-
-function reset() {
-	event.preventDefault();
-	form.reset();
+	stop.eventProgatrion
+	const getTime = $(event.currentTarget).find('input[name="time"]').val();
+	const getSubject = $(event.currentTarget).find('input[name="subject"]').val();
+	const getVerb = $(event.currentTarget).find('input[name="verb"]').val();
+	const getAdjective = $(event.currentTarget).find('input[name="object"]').val();
+	const getQuestion = $(event.currentTarget).find('input[name="question"]').val();
+	const Str = `${getTime} ${getSubject} ${getVerb} ${getAdjective} ${getQuestion}`;
+	$(Results).html(Str);
+  });
 }
 
+
+function resetForm() {
+	$(ResetBtn).click(function() {
+    $(this).closest('form').find("input[type=text], textarea").val("");
+  });
+}
+
+function start(){
+	resetForm();
+	getData();
+}
+$(start);

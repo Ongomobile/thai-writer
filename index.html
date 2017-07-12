@@ -4,7 +4,7 @@
 <head>
 	<title>Thai Learning Tools</title>
 	<meta charset="utf-8">
-	<meta name="description" content="This a landing page I practiced coding from a design">
+	<meta name="description" content="This site is for practicing Thai language">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
@@ -38,13 +38,13 @@
 				<div class="formHeader">
 					<h2>Thai Sentence Maker</h2>	
 				</div>
-				<form role="free trial form" class="trialForm">
-					<input id="timeTxt" type="text" name="time" placeholder="Time">
-					<input id="subjectTxt" type="text" name="subject" placeholder="Subject">
-					<input id="verbText" type="text" name="verb" placeholder="Verb">
-					<input id="adjectiveTxt" type="text" name="object" placeholder="Object, Adjective, Adverb">
-					<input id="questionTxt" type="text" name="question" placeholder="Question Word">
-					<button id="makeSentenceBtnPressed" class="submitBtn" type="button">Make Thai Sentence!</button>
+				<form role="free trial form" id="myForm" class="trialForm">
+					<input class="txtInput" id="timeTxt" type="text" name="time" placeholder="Time"  value="">
+					<input class="txtInput" id="subjectTxt" type="text" name="subject" placeholder="Subject" value="">
+					<input class="txtInput" id="verbText" type="text" name="verb" placeholder="Verb" value="">
+					<input class="txtInput" id="adjectiveTxt" type="text" name="object" placeholder="Object, Adjective, Adverb" value="">
+					<input class="txtInput" id="questionTxt" type="text" name="question" placeholder="Question Word" value="">
+					<button id="makeSentenceBtnPressed" class="submitBtn" type="submit">Make Thai Sentence!</button>
 					<button id="reset" class="resetBtn">Reset</button>
 				</form>			
 			</div>	
@@ -55,7 +55,7 @@
 			</div>
 	    </section>
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>	
     <script src="app.js"></script>
 </body>
 </html>
