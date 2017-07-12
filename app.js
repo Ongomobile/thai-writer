@@ -1,5 +1,6 @@
 const Time = ('#timeTxt');
 const Subject = ('#subjectTxt');
+const Tense = ('#tenseTxt');
 const Verb = ('#verbText');
 const Adjective = ('#adjectiveTxt');
 const Question = ('#questionTxt');
@@ -15,10 +16,11 @@ function getData() {
 	stop.eventProgatrion
 	const getTime = $(event.currentTarget).find('input[name="time"]').val();
 	const getSubject = $(event.currentTarget).find('input[name="subject"]').val();
+	const getTense = $(event.currentTarget).find('input[name="tense"]').val();
 	const getVerb = $(event.currentTarget).find('input[name="verb"]').val();
 	const getAdjective = $(event.currentTarget).find('input[name="object"]').val();
 	const getQuestion = $(event.currentTarget).find('input[name="question"]').val();
-	const Str = `${getTime} ${getSubject} ${getVerb} ${getAdjective} ${getQuestion}`;
+	const Str = `${getTime} ${getSubject} ${getTense} ${getVerb} ${getAdjective} ${getQuestion}`;
 	$(Results).html(Str);
   });
 }
