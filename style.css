@@ -180,8 +180,21 @@ nav .wrapper {
     font-weight: 300; }
 
     @media screen and (max-width: 425px) {
-       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/ThaiSceneMobile.jpg);
+       body {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/ThaiSceneMobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto, cover;
+      }
        .sentence{
-        font-size: 20px;
+        font-size: 28px;
+        color: red;
        }
+      header {
+        margin-top: 50px;
+      }
+
+      .slogan h1{
+        font-size: 3em;
+      }
     }
