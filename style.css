@@ -183,12 +183,11 @@ nav .wrapper {
        body {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/ThaiSceneMobile.jpg);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right;
         background-size: auto, cover;
       }
        .sentence{
         font-size: 28px;
-        color: red;
        }
       header {
         margin-top: 50px;
